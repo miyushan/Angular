@@ -33,15 +33,15 @@
     <h3>Comments</h3>
 
     <mat-list>
-      <mat-list-item *ngFor= 'let comment of dish.comments'>
+      <mat-list-item *ngFor= 'let items of dish.comments'>
         <p mat-line>
-          <span>{{comment.comment}}</span>
+          <span>{{items.comment}}</span>
         </p>
         <p mat-line>
-          <span>{{comment.rating}} Stars</span>
+          <span>{{items.rating}} Stars</span>
         </p>
         <p mat-line>
-          <span>--{{comment.author}} {{comment.date|date}}</span>
+          <span>--{{items.author}} {{items.date|date}}</span>
         </p>
       </mat-list-item>
     </mat-list>
